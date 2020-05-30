@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Finder</title>
+  </head>
+  <body>
+    <header>
+      <form class="search-form" id="search-form">
+        <p class="quantity-selector">
+          <select name="list1">
+            <option>12</option>
+            <option>24</option>
+            <option>36</option>
+            <option>48</option>
+            <option>60</option>
+          </select>
+        </p>
+        <input type="text" name="query" autocomplete="off" placeholder="Search images..." />
+        <button type="submit">Go!</button>
+      </form>
+    </header>
+    <main>
+      <ul class="gallery js-gallery grid"></ul>
+
+      <div class="buttons-wrapper js-buttons-wrapper is-hidden">
+        <button class="load-more" type="button" data-action="load-more">Load more</button>
+        <a class="pixabay-link" target="blank" href="https://pixabay.com/">
+          <img src="https://pixabay.com/static/img/public/leaderboard_a.png" alt="Pixabay" />
+        </a>
+        <button class="clear" type="button" data-action="clear">Clear</button>
+      </div>
+      <div class="control-infinite-scroll"></div>
+    </main>
+
+    <!-- spinner -->
+    <div class="spinner is-hidden" id="spinner">
+      <div class="loader">
+        <div class="face">
+          <div class="circle"></div>
+        </div>
+        <div class="face">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="footer-text">
+        Information is obtained via the RESTful API
+        <a target="blank" href="https://pixabay.com/service/about/api/"
+          >https://pixabay.com/service/about/api/</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
