@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/LeanNSP/learn-webpack/issues"
   },
-  "homepage": "https://github.com/LeanNSP/learn-webpack",
+  "homepage": "https://github.com/LeanNSP/goit-js-hw-13-image-finder",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
